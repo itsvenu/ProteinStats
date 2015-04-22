@@ -3,6 +3,10 @@
 
 use strict;
 use warnings;
+unless($#ARGV==0){
+	print "USAGE: perl protein_stats.pl file\n";
+	exit;
+}
 
 my $id = $ARGV[0];
 open(IN, $id);
